@@ -1,5 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
+  font-size: 62.5%;
   background: #e9d5ff;
+  font-family: "Rubik", sans-serif;
 }
 
 /* Reusable Class */
@@ -11,7 +21,103 @@ html {
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: center;
-  padding-top: 20px;
+  padding-top: 2rem;
 }
 
 /* headings */
+
+.rock-paper-scissors {
+  color: #c92a2a;
+  font-size: 7.5rem;
+  margin: 2rem;
+}
+
+.choose-weapon {
+  color: #fa5252;
+  font-size: 5rem;
+  margin: 2rem;
+}
+
+.winning {
+  color: #9b5757;
+  font-size: 5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Outputs */
+
+.roundResults {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30rem;
+  height: 10rem;
+  border: 0.5rem solid #9c9c9c;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+.scores {
+  display: flex;
+  flex-direction: row;
+}
+
+.scores div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 15rem;
+  height: 5rem;
+  border: 0.5rem solid #9c9c9c;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 2rem;
+  margin: 0.3rem 0.5rem 2rem 0.5rem;
+}
+
+/* buttons */
+
+.optionBtn button {
+  background-color: #d45069;
+  border: 0.4rem solid #5f0b3d;
+  width: 15rem;
+  height: 5rem;
+}
+
+.reset {
+  width: 12rem;
+  height: 4rem;
+  margin-top: 2rem;
+  background-color: #5f0b3d;
+  color: #d45069;
+  font-size: 2rem;
+}
+
+/* Label */
+
+.resultsLabel {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+  color: #5f0b3d;
+}
+
+.playerLabel {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+  color: #5f0b3d;
+  padding-left: 1.5rem;
+}
+
+.computerLabel {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+  color: #5f0b3d;
+  padding-right: 0.3rem;
+  padding-left: 1.8rem;
+}
